@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent-primary: #881337; /* Default Ivy Crimson */
+    --accent-light: #ffe4e6;
+    --font-heading: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-heading);
+}
+
+/* Print optimizations */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+
+/* Custom slick scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles for accessible inline edit */
+.editable-active {
+  border-bottom: 2px dashed var(--accent-primary);
+  padding-bottom: 1px;
+  cursor: text;
+  transition: all 0.2s;
+}
+
+.editable-active:hover {
+  background-color: rgba(136, 19, 55, 0.04);
+  border-radius: 2px;
+}
+
+/* Soft gradients */
+.bg-gradient-premium {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
