@@ -4,7 +4,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
   name: "Mark Li",
   // Replace this path with your actual photo: commit a photo to public/images/ and update the path below.
   // Example: "/images/mark-profile.jpg" for a file at public/images/mark-profile.jpg
-  photoUrl: "/images/sample-profile.jpg",
+  photoUrl: "/images/281.jpg",
   bio: "High-achieving student at Maple Leaf International Academy–Shenzhen with distinguished performance in international mathematics competitions, computer science, and physics. Published researcher, teaching assistant, and founder of multiple school clubs, with a deep commitment to community service, the arts, and endurance athletics.",
   gradeLevel: "Grade 11 • Class of 2027",
   school: "Maple Leaf International Academy–Shenzhen",
